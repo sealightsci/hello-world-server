@@ -33,6 +33,8 @@ public class App {
         try {
             jettyServer.start();
             jettyServer.join();
+            Thread.sleep(1000*60*3);
+            jettyServer.destroy();
         }
         catch(Exception e)
         {
