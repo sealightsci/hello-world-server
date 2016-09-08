@@ -32,7 +32,7 @@ public class App {
 
         try {
             jettyServer.start();
-            jettyServer.join();
+            //jettyServer.join();
             Thread.sleep(1000*30);
             jettyServer.stop();
         }
