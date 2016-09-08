@@ -34,7 +34,7 @@ public class App {
             jettyServer.start();
             jettyServer.join();
             Thread.sleep(1000*60*3);
-            System.exit(0);
+            jettyServer.stop();
         }
         catch(Exception e)
         {
